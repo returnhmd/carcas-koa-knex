@@ -1,0 +1,38 @@
+{
+  "name": "carcass",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "seeds:run": "./node_modules/.bin/knex --knexfile=./src/db/knexfile.js seed:run",
+    "seeds:make": "./node_modules/.bin/knex --knexfile=./src/db/knexfile.js seed:make",
+    "migrate:latest": "./node_modules/.bin/knex --knexfile=./src/db/knexfile.js migrate:latest",
+    "migrate:rollback": "./node_modules/.bin/knex --knexfile=./src/db/knexfile.js migrate:rollback",
+    "migrate:make": "./node_modules/.bin/knex --knexfile=./src/db/knexfile.js migrate:make"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^5.0.0",
+    "faker": "^4.1.0",
+    "jsonwebtoken": "^8.1.1",
+    "knex": "^0.14.2",
+    "koa": "^2.4.1",
+    "koa-bodyparser": "^4.2.0",
+    "koa-jwt": "^3.3.0",
+    "koa-logger": "^3.1.0",
+    "koa-router": "^7.4.0",
+    "lodash": "^4.17.5",
+    "pg": "^7.4.1",
+    "redis": "^2.8.0",
+    "yup": "^0.24.0"
+  },
+  "devDependencies": {
+    "eslint": "^4.17.0",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-plugin-import": "^2.8.0",
+    "prettier": "^1.10.2"
+  }
+}

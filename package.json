@@ -5,11 +5,16 @@
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "seeds:run": "./node_modules/.bin/knex --knexfile=./src/db/knexfile.js seed:run",
-    "seeds:make": "./node_modules/.bin/knex --knexfile=./src/db/knexfile.js seed:make",
-    "migrate:latest": "./node_modules/.bin/knex --knexfile=./src/db/knexfile.js migrate:latest",
-    "migrate:rollback": "./node_modules/.bin/knex --knexfile=./src/db/knexfile.js migrate:rollback",
-    "migrate:make": "./node_modules/.bin/knex --knexfile=./src/db/knexfile.js migrate:make"
+    "seeds:run":
+      "./node_modules/.bin/knex --knexfile=./src/db/knexfile.js seed:run",
+    "seeds:make":
+      "./node_modules/.bin/knex --knexfile=./src/db/knexfile.js seed:make",
+    "migrate:latest":
+      "./node_modules/.bin/knex --knexfile=./src/db/knexfile.js migrate:latest",
+    "migrate:rollback":
+      "./node_modules/.bin/knex --knexfile=./src/db/knexfile.js migrate:rollback",
+    "migrate:make":
+      "./node_modules/.bin/knex --knexfile=./src/db/knexfile.js migrate:make"
   },
   "author": "",
   "license": "ISC",
